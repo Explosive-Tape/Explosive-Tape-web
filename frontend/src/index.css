@@ -138,20 +138,48 @@ a:hover {
 .product-rating {
   margin-bottom: 1rem;
 }
-.order-header{
+
+.checkout-steps {
   display: flex;
   justify-content: space-between;
-  align-items: flex start
+  width: 40rem;
+  margin: 1rem auto;
 }
-.content-margined {
-  margin: 1rem;
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1 1;
+  padding-top: 1rem;
+
 }
-.table {
-  width: 100%;
+.checkout-steps > div.active {
+  border-top: 0.3rem #f08000 solid;
+  color: #f08000;
 }
-th {
-  text-align: left;
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  heigh: 100%;
 }
-tbody > tr:nth-child(odd) {
-  background-color: #f0f0f0;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+input {
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
 }
