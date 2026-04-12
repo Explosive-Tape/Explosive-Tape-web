@@ -34,6 +34,5 @@ export default {
         paidAt: '02/14/2021',
         isDelivered: false,
         deliveredDate: null,
-    }    
     }]
 }
