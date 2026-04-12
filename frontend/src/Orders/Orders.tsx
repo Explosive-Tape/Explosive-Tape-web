@@ -5,10 +5,10 @@ import data from './data';
 function Orders() {
     return (
         <div className = "content content-margined">
-            <div className + "order-header">
+            <div className = "order-header">
                 <h3>Orders</h3>
             </div>
-            <div className= "order-list">
+            <div className = "order-list">
                 <table className = "table">
                     <thead>
                         <tr>
@@ -24,30 +24,30 @@ function Orders() {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.orders.map((order)
+                        {data.orders.map((order) => (
                         <tr key = {order._id} >
-                            <td>{Orders._id}</td>
-                            <td>{Orders.createdAt} </td>
-                            <td>{Orders.totalPrice} </td>
-                            <td>{Orders.user.name} </td>
-                            <td>{Orders.isPaid} </td>
-                            <td>{Orders.paidAt} </td>
-                            <td>{Orders.isDelivered.toString()} </td>
-                            <td>{Orders.deliverableData} </td>
+                            <td>{order._id}</td>
+                            <td>{order.createdAt} </td>
+                            <td>{order.totalPrice} </td>
+                            <td>{order.user.name} </td>
+                            <td>{order.isPaid} </td>
+                            <td>{order.paidAt} </td>
+                            <td>{order.isDelivered.toString()} </td>
+                            <td>{order.deliveredDate || '-'} </td>
                             <td>
-                                <Link to ={"/order/" + Orders._id} className = "button secondary" >
+                                <Link to ={"/order/" + order._id} className = "button secondary" >
                                   Details
                                 </Link>
                             </td>
                         </tr>
 
-                    )}
+                    ))}
                     </tbody>
 
                 </table>
             </div>
-        </div>;
-    )
+        </div>
+    );
 };
 
 export default Orders;
