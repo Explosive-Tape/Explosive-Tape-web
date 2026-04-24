@@ -3,7 +3,7 @@ import React from 'react';
 import CheckoutSteps from '../Payments/CheckoutSteps';
 
 function PaymentScreen() {
-    const submitHandler = () {
+    const submitHandler = () => {
         alert("Payment processing ...")
     };
 
@@ -21,7 +21,7 @@ function PaymentScreen() {
                             <div>
                                 <input 
                                     type = "radio"
-                                    nmae = "paymentMethod"
+                                    name = "paymentMethod"
                                     id = "paymentMethod"
                                     value = "paypal"
                                     ></input>
@@ -36,7 +36,7 @@ function PaymentScreen() {
                             </div>
                         </li>
                         <li>
-                            <button type = "submit" className = "button primary"></Continue></button>
+                            <button type = "submit" className = "button primary">Continue</button>
                         </li>
                     </ul>
                 </form>
